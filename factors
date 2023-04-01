@@ -9,11 +9,11 @@ _factor()
                 num2=1
                 for a in ${args[*]};
                 do
-                       if [ $count -gt 1 ];
-                       then
+                        if [ $count -gt 1 ];
+                        then
                                num2=$(echo $a*$num2 | bc)
-                       fi
-                       count=$((count + 1))
+                        fi
+                        count=$((count + 1))
                 done
         else
                 num2=$3
