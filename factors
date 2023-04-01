@@ -43,5 +43,6 @@ else
 
                 result=$(factor "$i")
                 _factor $result
+
         done < "$1"
 fi
