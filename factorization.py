@@ -9,7 +9,7 @@ def primefunc(n):
     elif n % 3 == 0:
         return 3
     else:
-        for i in range (5, int((n)**0.5) + 1, 6):
+        for i in range(5, int((n)**0.5) + 1, 6):
             if n % i == 0:
                 return int(i)
             if n % (i + 2) == 0:
