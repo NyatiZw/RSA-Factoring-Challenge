@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 import sys
 
+
 def primefunc(n):
+
     if n <= 3:
         return int(n)
     if n % 2 == 0:
@@ -15,5 +17,6 @@ def primefunc(n):
             if n % (i + 2) == 0:
                 return primefunc(n/i+2))
     return int(n)
+
 
 print(primefunc(int(sys.argv[1])))
