@@ -13,7 +13,7 @@ def primefunc(n):
             if n % i == 0:
                 return int(i)
             if n % (i + 2) == 0:
-                return primefunc(n/i + 2))
+                return primefunc(n/i+2))
     return int(n)
 
 print(primefunc(int(sys.argv[1])))
