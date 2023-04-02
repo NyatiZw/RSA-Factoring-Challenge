@@ -23,7 +23,7 @@ _factors()
         num=$(echo "$1" | tr ':' '=')
 
         result=$(echo "if($num2 > $num1) 1 else 0" | bc)
-                if [(result == 1)]; then
+                if ((result == 1)); then
                         numcpy=$num1
                         num1=$num2
                         num2=$numcpy
