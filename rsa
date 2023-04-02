@@ -37,8 +37,10 @@ then
         echo 'Usage: rsa <file>'
         exit 1
 else
-        while read i
-        do
+
+	while read i
+
+	do
 
                 result=$(factor "$i")
                 _factors $result
