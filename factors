@@ -41,7 +41,7 @@ else
         while read i
         do
                 result=$(factor "$i")
-                _factors $result
+                _factors '$result'
 
         done < "$1"
 fi
