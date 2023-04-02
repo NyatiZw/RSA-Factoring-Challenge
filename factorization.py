@@ -3,7 +3,6 @@ import sys
 
 
 def primefunc(n):
-
     if n <= 3:
         return int(n)
     if n % 2 == 0:
@@ -14,7 +13,7 @@ def primefunc(n):
         for i in range(5, int((n)**0.5) + 1, 6):
             if n % i == 0:
                 return int(i)
-            if n % (i+2) == 0:
+            if n % (i + 2) == 0:
                 return primefunc(n/i+2))
     return int(n)
 

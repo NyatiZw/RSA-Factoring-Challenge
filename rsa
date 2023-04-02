@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-_factor()
+_factors()
 {
         if [ $# -ne 3 ];
         then

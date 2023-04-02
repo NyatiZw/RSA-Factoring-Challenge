@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-_factor()
+_factors()
 {
         if [ $# -ne 3 ];
         then
-                args=('$@')
+                args=("$@")
                 count=0
                 num2=1
                 for a in ${args[*]};
@@ -42,7 +42,7 @@ else
         do
 
                 result=$(factor "$i")
-                _factor $result
+                _factors $result
 
         done < "$1"
 fi
