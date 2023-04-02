@@ -24,9 +24,9 @@ _factors()
 
         result=$(echo "if($num2 > $num1) 1 else 0" | bc)
                 if ((result == 1)); then
-                        numcpy=$num1
+                        numcp=$num1
                         num1=$num2
-                        num2=$numcpy
+                        num2=$numcp
                 fi
 
         echo "$num$num1*$num2"
