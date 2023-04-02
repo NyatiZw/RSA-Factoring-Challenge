@@ -39,6 +39,7 @@ then
 else
         while read i
         do
+
                 result=$(factor "$i")
                 _factors $result
 
