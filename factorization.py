@@ -15,6 +15,7 @@ def primefunc(num):
                 return int(j)
             if num % (j + 2) == 0:
                 return primefunc(num/j+2))
+
     return int(num)
 
 
